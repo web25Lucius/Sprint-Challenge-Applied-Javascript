@@ -9,21 +9,24 @@
 //  </div >
 // And add it to the DOM in the .header-container component
 
+ 
 function Header() {
-const hContainer = document.querySelector('.header-container'); 
-console.log(hContainer); 
-const board = document.createElement('div'); 
-const day = document.createElement('span'); 
-const lambdaTimes = document.createElement('h1'); 
-const temperature = document.createElement('span'); 
-board.classList.add('.header'); 
-day.classList.add('.date'); 
-temperature.classList.add('.temp'); 
-day.textContent = 'SMARCH 28, 2019'; 
-lambdaTimes.textContent = 'Lambda Times'; 
-board.appendChild(hContainer); 
-day.appendChild(board); 
-lambdaTimes.appendChild(day); 
-temperature.appendChild(lambdaTimes); 
+    const board = document.createElement('div'); 
+    const day = document.createElement('span'); 
+    const lambdaTimes = document.createElement('h1'); 
+    const temperature = document.createElement('span'); 
 
-return hContainer
+    board.classList.add('header'); 
+    day.classList.add('date'); 
+    temperature.classList.add('temp'); 
+    day.textContent = 'MARCH 28, 2019'; 
+    lambdaTimes.textContent = 'Lambda Times'; 
+
+    board.appendChild(day); 
+    board.appendChild(lambdaTimes); 
+    board.appendChild(temperature); 
+
+    return board; 
+}; 
+console.log(Header()); 
+document.querySelector('.header-container').appendChild(Header());   
