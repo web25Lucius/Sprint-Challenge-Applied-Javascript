@@ -10,10 +10,15 @@
 
 
 axios.get("https://lambda-times-backend.herokuapp.com/topics").then(response => {
-    // console.log(response); unnamed object containing array of five strings 
-        for (topics in response.data){ 
-        let newTab = document.createElement('div'); 
-        newTab.classList.add('.tab');
-        return newTab; 
-    };     document.querySelector('.topics').appendChild(newTab);            
-}); 
+    //console.log(response.data.topics); //unnamed object containing array of five strings 
+    response.data.topics.forEach((tabName =>{
+        
+        let tab = document.createElement('div'); 
+        tab.classList.add('.tab');
+        tab.textContent = tabName;
+        document.querySelector('.topics').appendChild(tab); 
+        return tab; 
+    })
+        
+    );  
+});
