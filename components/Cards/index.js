@@ -50,10 +50,10 @@ function createCard(object) {
   imgContainer.appendChild(cardImg);
   imgContainer.appendChild(credit);
 
-  card.classList.add('.card');
-  authorContent.classList.add('.author');
-  headline.classList.add('.headline');
-  imgContainer.classList.add('.img-container');
+  card.classList.add('card');
+  authorContent.classList.add('author');
+  headline.classList.add('headline');
+  imgContainer.classList.add('img-container');
 
   headline.textContent = (object.headline); 
   cardImg.src = (object.authorPhoto); 
