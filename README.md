@@ -30,16 +30,16 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
    
-    Document Object Model, this is the representation of the HTML document that we can manipulate using the DOM
+    Document Object Model, this is the representation of the HTML document that we can use javascript to manipulate. 
 
 2. What is an event?
     
-    When we .addEventListener we create vigilant code that watches for the action we set in the parameter.  When that action occurs, and event executes.  The behavior we told the machine to perform occurs when the event happens.  
+    When we employ .addEventListener we create vigilant code that watches for the action we set in the parameter.  When that action occurs, and event executes.  The behavior we told the machine to perform occurs when the event happens.  
 
 3. What is an event listener?
     
     .addEventListener is the command to listen for ('nameOfActionToWatchFor', (event)){
-        behavior you want when event is called by the nameOfActionToWatchFor
+       code  block: this is where you define the behavior you want when event is called by the nameOfActionToWatchFor
     }
 
 4. Why would we convert a NodeList into an Array?
