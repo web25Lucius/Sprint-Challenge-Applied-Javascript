@@ -17,3 +17,15 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+
+const carousel = document.createElement('div'); 
+carousel.classList.add('carousel'); 
+
+
+const leftButton = document.createElement('div'); 
+leftButton.classList.add('left-button'); 
+carousel.appendChild(leftButton); 
+
+const mountain = document.createElement('img'); 
+mountain.setAttribute("src", )
