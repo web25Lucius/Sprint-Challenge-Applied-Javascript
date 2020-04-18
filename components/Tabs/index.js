@@ -10,7 +10,7 @@
 
 
 axios.get("https://lambda-times-backend.herokuapp.com/topics").then(response => {
-    //console.log(response.data.topics); //unnamed object containing array of five strings 
+    console.log(response.data.topics); 
     response.data.topics.forEach((tabName =>{
         
         let tab = document.createElement('div'); 
