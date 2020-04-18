@@ -29,18 +29,14 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
-   
-    Document Object Model, this is the representation of the HTML document that we can use javascript to manipulate. 
+   Document Object Model, this is the representation of the HTML document that we can use javascript to manipulate. 
 
 2. What is an event?
-    
-    When we employ .addEventListener we create vigilant code that watches for the action we set in the parameter.  When that action occurs, and event executes.  The behavior we told the machine to perform occurs when the event happens.  
+    Any action taken by the user that effects the page.  A click, key down, key up, scrolling- are all actions that offer an opportunity to manipulate the DOM.   
 
 3. What is an event listener?
-    
-    .addEventListener is the command to listen for ('nameOfActionToWatchFor', (event)){
-       code  block: this is where you define the behavior you want when event is called by the nameOfActionToWatchFor
-    }
+    .addEventListener is vigilant code that is used to set the target of an event, and allow us to use a code block and assign what action the event triggers.  
+     When that action occurs, and the code block executes.  
 
 4. Why would we convert a NodeList into an Array?
     
@@ -49,8 +45,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 5. What is a component?
     
-    reusable code that functions on it's own and can be mass produced without repitition (DRY)
-
+    reusable modular code that functions on it's own and can be mass produced without repitition (DRY)
 
 
 ### Git Set up
